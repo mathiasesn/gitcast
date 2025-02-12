@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gitcast"
+version = "0.1.0"
+description = "A CLI tool for generating a podcast episode from a git repository"
+authors = [{ name = "Mathias Nielsen", email = "mathiasesn1@gmail.com" }]
+maintainers = [{ name = "Mathias Nielsen", email = "mathiasesn1@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "gitpython>=3.1.43",
+    "markdownify>=0.14.1",
+    "openai>=1.62.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+    "rich>=13.9.4",
+    "tqdm>=4.67.1",
+]
+
+[tool.uv]
+dev-dependencies = ["pytest-cov>=6.0.0", "pytest>=8.3.4", "ruff>=0.8.4"]
+
+[project.scripts]
+gitcast = "gitcast.cli:main"
