@@ -1,5 +1,4 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,git
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,git
+data/*
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -206,5 +205,3 @@ pyrightconfig.json
 # Ignore all local history of files
 .history
 .ionide
-
-# End of https://www.toptal.com/developers/gitignore/api/python,git
